@@ -2,7 +2,7 @@
 
 A **web-based student portal** designed for **Ewing Christian College, Prayagraj (ECC)** to streamline student services such as login, fees payment, complaints, feedback, notices, downloads, and more.  
 
-![Student Services Portal - Login](Screenshots/1. Login_Page.png)  
+![Student Services Portal - Login](Screenshots/1.Login_Page.jpeg)  
 ![Student Services Portal - Dashboard](Screenshots/3.Stu1_Dashboard.png)  
 ---
 ## ✨ Features
@@ -168,4 +168,5 @@ Here are some key pages of the project (all screenshots are stored in the `Scree
 🏫 Ewing Christian College (ECC), Prayagraj  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/ashutoshg780) 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/ashutoshg780)
+
 
