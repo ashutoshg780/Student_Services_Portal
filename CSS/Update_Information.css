@@ -1,0 +1,174 @@
+/* ============================== */
+/* Student Details main info box   */
+/* ============================== */
+#ckinfo {
+    width: 60%;                 /* Make it take 80% of available width */
+    margin: 30px auto;           /* Center horizontally with auto margin */
+    padding: 20px;               /* Internal spacing */
+    text-align: left;            /* Align text neatly */
+}
+
+/* Center the Student Details heading */
+
+
+.txtcenter {
+  text-align: center;
+    margin-bottom: 20px; /* optional spacing below */
+}
+
+/* ============================== */
+/* Flexbox layout for student details */
+/* ============================== */
+.student-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   /* Align items from the top */
+    gap: 10px;                 /* tightened gap between labels & inputs */
+}
+
+/* Left column (labels) */
+.student-details .labels {
+    font-weight: bold;
+    text-align: right;         /* Align labels right */
+    flex: 0.5;                 /* smaller width */
+}
+
+.student-details .labels div {
+    display: flex;
+    align-items: center;       /* vertically align with inputs */
+    justify-content: flex-end; /* keep text right aligned */
+    height: 36px;              /* same height as inputs */
+    margin-bottom: 8px;
+    padding-right: 12px;       /* reserve space for checkbox gap */
+}
+
+/* Middle column (values) */
+.student-details .values {
+    text-align: left;
+    flex: 1;                   /* give more space to inputs */
+}
+
+.student-details .values div {
+    display: flex;
+    align-items: center;       /* vertical alignment */
+    gap: 6px;                  /* spacing between checkbox & input */
+    margin-bottom: 8px;
+}
+
+/* Inputs and textarea */
+.student-details .values input,
+.student-details .values textarea {
+    flex: 1;                   /* take remaining space */
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 36px;              /* ✅ force same height as inputs */
+    line-height: 1.4;          /* keep text well-spaced */
+    box-sizing: border-box;
+    resize: vertical;          /* ✅ allow expand when typing */
+    min-height: 36px;          /* don't shrink smaller than inputs */
+}
+
+/* Fix textarea so it doesn't overlap */
+.student-details .values textarea {
+    min-height: 35px;          /* enough space for address */
+    line-height: 1.0;          /* better text spacing */
+    resize: vertical;          /* allow user to expand if needed */
+    box-sizing: border-box;    /* include padding in height calc */
+}
+
+/* Keep all checkboxes aligned in one column */
+.student-details .values input[type="checkbox"] {
+    flex: 0 0 18px;            /* fixed width for alignment */
+    margin-right: 6px;         /* little gap before input field */
+}
+
+/* ============================== */
+/* Right column (photo)           */
+/* ============================== */
+.student-details .photo {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;    /* stack image + button */
+    align-items: center;       /* center them */
+    gap: 10px;                 /* spacing between photo and button */
+}
+
+/* Student photo */
+#spic {
+    width: 200px;              /* increased size */
+    height: 230px;             /* increased size */
+    border-radius: 10px;
+    border: 2px solid #333;
+    object-fit: cover;         /* keeps aspect ratio without distortion */
+}
+
+/* Glass Button */
+.glass-btn {
+  background: rgba(0, 123, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+.glass-btn:hover {
+  background: rgba(0, 123, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* ============================== */
+/* Change Information Save Button */
+/* ============================== */
+.change-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;          /* spacing above */
+    text-decoration: none;     /* remove underline */
+    color: inherit;            /* keep text color consistent */
+}
+
+.change-info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#saveBtn{
+  margin-top: 20px;
+}
+
+/* ================= Modal ================= */
+.modal-overlay {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay.hidden {
+  display: none;
+}
+.modal {
+  width: 50%;
+  padding: 20px;
+  animation: fadeIn 0.4s ease;
+}
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

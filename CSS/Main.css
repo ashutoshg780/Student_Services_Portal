@@ -1,0 +1,275 @@
+/* ================================================== */
+/*       Global Styles for College LMS Portal         */
+/* ================================================== */
+
+/* ------------------------------ */
+/* Global Font + Color Scheme     */
+/* ------------------------------ */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../Pictures/home.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+}
+
+/* ------------------------------ */
+/* Reusable Glassmorphism Class   */
+/* ------------------------------ */
+.glass-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ================================================== */
+/* NAVBAR (common on all pages)                       */
+/* ================================================== */
+.navbar-custom {
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* New vibrant blue gradient */
+    height: 80px;                     /* Fixed height */
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Softer shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;          /* Center-align everything */
+    margin-left: "navbar-custom";
+}
+
+/* Navbar inner layout */
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.navbar-hamburger{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Logo + title wrapper */
+.navbar-title {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and text */
+}
+
+/* College + Page Title stacked */
+.navbar-title-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+/* College name (secondary line) */
+.navbar-title-text .college-name {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Page title (primary focus) */
+.navbar-title-text .page-title {
+    font-size: 28px;            /* Larger emphasis */
+    font-weight: bold;
+    color: #ffffff;             /* Bright white */
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+
+/* ================================================== */
+/* SIDEBAR (student info + navigation)                */
+/* ================================================== */
+
+/* Whole sidebar */
+.w3-sidebar {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: white;
+    width: 275px!important;
+    padding-top: 15px;
+    height: 100vh;
+    overflow-y: auto;   
+    display: flex;        
+    flex-direction: column;
+}
+
+
+/* ------------------------------ */
+/* Student Info Block             */
+/* ------------------------------ */
+.student-info {
+    padding: 15px;
+    margin-bottom: 25px; /* Gap below info block before nav starts */
+}
+
+.student-info .student-photo {
+    display: block;
+    margin: 0 auto 8px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    margin-bottom: 5px; /* Small gap (4–5px) between photo and text */
+}
+
+.student-info a {
+    text-decoration: none;  /* ⬅ removes underline */
+    color: inherit;         /* ⬅ keeps text color same as parent */
+    display: block;         /* makes the whole card clickable */
+}
+
+
+.student-info a p {
+    margin: 4px 0; /* Small gap between enrollment, name, email */
+    font-size: 14px;
+}
+
+
+/* Center headings */
+.txtcenter {
+    text-align: center;
+}
+
+/* ------------------------------ */
+/* Navigation Links               */
+/* ------------------------------ */
+
+/* Navigation container */
+.sidebar-nav {
+    flex: 1;               
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Top navigation group */
+.sidebar-nav .main-links a {
+    padding: 12px 10px; /* Uniform spacing (12px) */
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover + active link */
+.sidebar-nav .main-links a:hover,
+.sidebar-nav .main-links a.active-link {
+    background: rgba(255,255,255,0.25);
+    transform: translateX(4px);
+}
+
+/* Bottom navigation group (pinned to bottom) */
+.sidebar-nav .bottom-links {
+    position: absolute;   /* Take it out of the flow */
+    bottom: 15px;         /* Distance from bottom of screen */
+    left: 0;
+    width: 100%;          /* Full width inside sidebar */
+    padding-top: 10px;
+    border-top: none;
+}
+
+
+.sidebar-nav .bottom-links a {
+    padding: 8px 10px; /* Smaller padding for bottom links */
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar-nav .bottom-links a:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* ================================================== */
+/* EVENTS SECTION (Common for all pages after login)  */
+/* ================================================== */
+
+/* Outer wrapper (big glass box) */
+/* Events Section Wrapper */
+.event-wrapper {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 250px;            /* Fix: lock compact width */
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    max-height: 75vh;        /* prevent it from going off-screen */
+    overflow-y: auto;        /* scroll if too many events */
+}
+
+
+/* Inner event cards (Classes, Assignments, Exams) */
+.event-card {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px 0;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Event headings */
+.event_head {
+    font-size: 14.79px !important;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Event items */
+.dig, .event-item {
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    background: rgba(255,255,255,0.15);
+    color: #000;
+    text-align: center;
+    margin: 5px 0;
+    padding: 6px;
+    font-size: 13.75px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.dig:hover, .event-item:hover {
+    transform: scale(1.02);
+    background: rgba(72, 239, 128, 0.3); /* subtle green glow */
+    box-shadow: 0 0 6px rgba(72, 239, 128, 0.6);
+}
+
+/* ================================================== */
+/* Date & Time (floating bottom-right)                */
+/* ================================================== */
+#datetime {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-family: monospace;
+}

@@ -1,0 +1,36 @@
+/* Wrapper to center the box */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    margin-top: 30px;
+}
+
+/* Curriculum download box */
+.curriculum-box {
+    width: 45%;               /* ✅ fixed width like Live_Class */
+    margin: 0 auto;           /* center horizontally */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.txtcenter{
+    text-align: center;
+}
+
+/* Two-column layout */
+.dispflex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Links */
+.dispflex a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.dispflex a:hover {
+    color: #0072ff;
+    text-decoration: underline;
+}

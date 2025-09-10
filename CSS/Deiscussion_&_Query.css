@@ -1,0 +1,62 @@
+/* ============================== */
+/* Discussion & Query Page        */
+/* ============================== */
+
+/* Glass Box Container */
+.discussion-box {
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+}
+
+/* Columns */
+.discussion-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Each Section */
+.discussion-section {
+  flex: 1;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+.discussion-section h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 8px;
+}
+
+/* Buttons (instead of plain links) */
+.discussion-section button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 123, 255, 0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s, transform 0.2s;
+}
+.discussion-section button:hover {
+  background: rgba(0, 123, 255, 0.4);
+  transform: scale(1.03);
+}

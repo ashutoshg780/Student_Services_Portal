@@ -1,0 +1,33 @@
+body {
+    background-image: url(../Pictures/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.w3-sidebar {
+    background-color: #e3f2fd !important; /* Light blue */
+}
+
+.w3-bar-item.w3-button {
+    color: #333;
+    font-weight: 600;
+}
+
+.w3-bar-item.w3-button:hover {
+    background-color: #c8e6c9 !important; /* Light green on hover */
+}
+
+.w3-main {
+    background-color: #00897b !important; /* Muted teal */
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    font-size: x-large;
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+}

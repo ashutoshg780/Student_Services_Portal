@@ -1,0 +1,83 @@
+/* Main glass-styled box */
+.login-box {
+  font-family: 'Nunito', sans-serif;
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4),
+              inset 0 1px 2px rgba(255,255,255,0.3);
+}
+
+/* Input field container */
+.input_box { 
+  display: flex;
+  margin: 10px auto;
+  border-radius: 8px;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,1);
+}
+.input_box::before {
+  content: attr(data-icon);
+  margin-right: 8px;
+  font-size: 18px;
+  color: white;
+}
+.input_box input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+.input_box input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Buttons row */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Login Button */
+#loginBtn {
+  flex: 1;
+  margin-right: 8px;
+  padding: 8px;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#loginBtn:hover {
+  box-shadow: 0 6px 20px rgba(72, 239, 128, 0.6);
+  transform: scale(1.05);
+}
+
+/* Forgot Password */
+#forgotBtn {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#forgotBtn:hover {
+  background: rgba(72, 239, 128, 0.2);
+  box-shadow: 0 0 6px rgba(72, 239, 128, 0.6);
+}

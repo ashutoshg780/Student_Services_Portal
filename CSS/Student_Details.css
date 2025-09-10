@@ -1,0 +1,72 @@
+/* Student Details main info box */
+#ckinfo {
+    width: 60%;                 /* Make it take 80% of available width */
+    margin: 30px auto;           /* Center horizontally with auto margin */
+    padding: 20px;               /* Internal spacing */
+    text-align: left;            /* Align text neatly */
+}
+
+/* Center the Student Details heading */
+#ckinfo h1 {
+    text-align: center;
+    margin-bottom: 20px; /* optional spacing below */
+}
+
+/* Flexbox layout for student details */
+.student-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   /* Align items from the top */
+    gap: 25px;                 /* Space between columns */
+}
+
+/* Left column (labels) */
+.student-details .labels {
+    font-weight: bold;
+    text-align: right;         /* Align labels right */
+    flex: 1;
+}
+
+/* Middle column (values) */
+.student-details .values {
+    text-align: left;
+    flex: 2;
+}
+
+/* Right column (photo) */
+.student-details .photo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Push photo to right edge */
+}
+
+/* Student photo */
+/* Make student photo bigger */
+#spic {
+    width: 200px;      /* increased size */
+    height: 230px;     /* increased size */
+    border-radius: 10px;
+    border: 2px solid #333;
+    object-fit: cover; /* keeps aspect ratio without distortion */
+}
+
+/* Center the Change Information link */
+.change-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  /* spacing above */
+    text-decoration: none; /* remove underline */
+    color: inherit;    /* keep text color consistent */
+}
+
+.change-info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+/* ID Card download links */
+#LID-CARD {
+    float: right;
+}

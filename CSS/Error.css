@@ -1,0 +1,50 @@
+/* ============================== */
+/* Error Page                     */
+/* ============================== */
+
+/* Glass Box for Error */
+.error-box {
+  width: 43%;
+  margin: 120px auto;
+  padding: 40px;
+  background: rgba(255, 0, 0, 0.1);   /* light red tint */
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+}
+
+/* Error Heading */
+.error-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff4d4d; /* bright red */
+}
+
+/* Error Paragraph */
+.error-box p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.error-actions button {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.error-actions button:hover {
+  background: rgba(255, 0, 0, 0.4);
+  transform: scale(1.05);
+}
