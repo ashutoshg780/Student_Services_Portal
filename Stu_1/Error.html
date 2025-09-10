@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/w3.css">
+  <link rel="stylesheet" href="../CSS/Main.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="../CSS/Error.css"> <!-- Page-specific styles -->
+
+  <!-- JS -->
+  <script src="../Js/Main.js"></script>
+
+  <title>Error 404</title>
+</head>
+
+<body>
+  <!-- ================= Sidebar ================= -->
+  <div class="w3-sidebar sidebar-custom w3-bar-block w3-collapse w3-card w3-animate-left" style="width:320px;left:0;"
+    id="mySidebar">
+
+    <!-- Mobile close -->
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
+    <!-- Class year -->
+    <div class="w3-container" style="text-align: center;">
+      <h1>BCA 3rd Year</h1>
+    </div>
+
+    <!-- Student info -->
+    <div class="student-info">
+      <a href="Student_Details.html">
+        <img src="Profile_Pic.jpg" alt="Student Photo" class="student-photo">
+        <p><strong>Enrollment no.:</strong> ECC20200074</p>
+        <p><strong>Name:</strong> Manav Kumar</p>
+        <p><strong>Email:</strong> manavkuamr123@gmail.com</p>
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <div class="sidebar-nav">
+      <div class="main-links">
+        <a href="Home.html">🏠 Student Dashboard</a>
+        <a href="Student_Details.html">👨‍🎓 STUDENT DETAILS</a>
+        <a href="Fees_Payments.html">💳 FEES PAYMENTS</a>
+        <a href="Academic_Score.html">📊 ACADEMIC SCORE</a>
+        <a href="Academic_Curriclum.html">📘 ACADEMIC CURRICULUM</a>
+        <a href="Discussions_&_Query.html">💬 DISCUSSIONS & QUERY</a>
+      </div>
+
+      <div class="bottom-links">
+        <a href="Change_Password.html">🔑 Change Password</a>
+        <a href="Feedback.html">✍️ Feedback</a>
+        <a href="Complaint.html">📢 Complaint</a>
+        <a href="../Logout.html">📕 Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Navbar ================= -->
+  <div class="navbar-custom">
+    <div class="navbar-inner">
+      <!-- Hamburger -->
+      <div class="navbar-hamburger">
+        <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+      </div>
+
+      <!-- Logo + Title -->
+      <div class="navbar-title">
+        <img src="../Pictures/coll logo.jpeg" class="w3-circle" alt="College Logo" width="60px">
+        <div class="navbar-title-text">
+          <span class="college-name">Ewing Christian College</span>
+          <span class="page-title">Error</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Main Content ================= -->
+
+  <div class="glass-box error-box">
+    <h1>🚨 Page Not Found</h1>
+    <p>⚠️ Currently the server is not working or the page you are looking for cannot be found.</p>
+    <p>Please try again later, or return to the dashboard.</p>
+
+    <div class="error-actions">
+      <button onclick="window.history.back()">⬅️ Go Back</button>
+      <button onclick="window.location.href='Home.html'">🏠 Go to Dashboard</button>
+    </div>
+  </div>
+
+  <!-- ================= Events Section (common) ================= -->
+  <div id="Events" class="event-wrapper">
+    <div class="event-card">
+      <h2 class="event_head">📚 Upcoming Classes</h2>
+      <div class="dig">Cloud Computing - 10 AM</div>
+      <div class="dig">Data Structures - 12 PM</div>
+      <div class="dig">Operating System s - 2 PM</div>
+    </div>
+
+    <div class="event-card">
+      <h2 class="event_head">📝 Pending Assignments</h2>
+      <div class="dig">DSA Assignment 2</div>
+      <div class="dig">DBMS Lab Work</div>
+      <div class="dig">AI Research Notes</div>
+    </div>
+
+    <div class="event-card">
+      <h2 class="event_head">🧪 Upcoming Exams</h2>
+      <div class="dig">OOPS Mid Term - 20 Jan</div>
+      <div class="dig">Networking Quiz - 25 Jan</div>
+      <div class="dig">AI Viva - 28 Jan</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Date & Time -->
+  <div id="datetime"></div>
+
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title> -->
+
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../CSS/Main.css">
+  <link rel="stylesheet" href="../CSS/Error.css">
+</head>
+<body> -->
+
+  <!-- ================= Error Box ================= -->
+  <!-- <div class="glass-box error-box">
+    <h1>🚨 Page Not Found</h1>
+    <p>⚠️ Currently the server is not working or the page you are looking for cannot be found.</p>
+    <p>Please try again later, or return to the dashboard.</p>
+
+    <div class="error-actions">
+      <button onclick="window.history.back()">⬅️ Go Back</button>
+      <button onclick="window.location.href='Home.html'">🏠 Go to Dashboard</button>
+    </div>
+  </div>
+
+</body>
+</html> -->

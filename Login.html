@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/Main.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="CSS/Login.css"> <!-- Page-specific styles -->
+
+    <!-- JS -->
+    <script src="Js/Main.js"></script>
+    <script src="Js/Login.js"></script>
+
+    <title>Student Login Management System</title>
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+    <div class="w3-sidebar sidebar-custom w3-bar-block w3-collapse w3-card w3-animate-left" style="width:320px;left:0;"
+        id="mySidebar">
+
+        <!-- Mobile close -->
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
+
+        <!-- Navigation -->
+        <div class="sidebar-nav">
+            <div class="main-links">
+                <a href="Login.html">🔑 LOGIN</a>
+                <a href="News,_Notices_&_Downloads.html">📄 NEWS AND NOTICE</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= Navbar ================= -->
+    <div class="navbar-custom">
+        <div class="navbar-inner">
+            <!-- Hamburger -->
+            <div class="navbar-hamburger">
+                <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            </div>
+
+            <!-- Logo + Title -->
+            <div class="navbar-title">
+                <img src="Pictures/coll logo.jpeg" class="w3-circle" alt="College Logo" width="60px">
+                <div class="navbar-title-text">
+                    <span class="college-name">Ewing Christian College</span>
+                    <span class="page-title">Student Login Management System</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Main Content ================= -->
+    <div class="login-box"> <!-- Glass-styled inner box -->
+        <!-- Login Form -->
+        <form id="loginForm">
+            <!-- Heading for login box -->
+            <h1 class="txtcenter" id="loginHeading">
+                STUDENT LOGIN
+            </h1>
+
+            <div class="input_box" data-icon="👤">
+                <input type="text" placeholder="USERNAME" id="loginUsername" required>
+            </div>
+
+            <div class="input_box" data-icon="🔒">
+                <input type="password" placeholder="PASSWORD" id="loginPassword" maxlength="10" required>
+            </div>
+
+            <!-- Row: Login + Forgot Password -->
+            <div class="btn-row">
+                <button type="button" id="loginBtn">LOGIN 🔑</button>
+                <button type="button" id="forgotBtn"> Forgot Password ❓</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Date & Time -->
+    <div id="datetime"></div>
+
+</body>
+
+</html>

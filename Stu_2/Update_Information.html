@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/w3.css">
+  <link rel="stylesheet" href="../CSS/Main.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="../CSS/Update_Information.css"> <!-- Page-specific -->
+
+  <!-- JS -->
+  <script src="../Js/Main.js"></script>
+  <script defer src="../Js/Update_Information.js"></script>
+
+  <title>Update Information</title>
+</head>
+
+<body>
+
+  <!-- ================= Sidebar ================= -->
+    <div class="w3-sidebar sidebar-custom w3-bar-block w3-collapse w3-card w3-animate-left" style="width:320px;left:0;"
+        id="mySidebar">
+
+        <!-- Mobile close -->
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
+        <!-- Year/Class -->
+        <div class="w3-container" style="text-align: center;">
+            <h1>BCA 2nd Year</h1>
+        </div>
+
+        <!-- Student Info -->
+        <div class="student-info">
+            <a href="Student_Details.html">
+                <img src="Profile_Pic.jpg" alt="Student Photo" class="student-photo">
+                <div class="w3-bar-item">Enrollment no.: ECC20200079</div>
+                <div class="w3-bar-item">Name: Soniya Yadav</div>
+                <div class="w3-bar-item">Email: soniyayadav1111@gmail.com</div>
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <div class="sidebar-nav">
+            <div class="main-links">
+                <a href="Home.html">🏠 Student Dashboard</a>
+                <a href="Student_Details.html" class="active-link">👨‍🎓 STUDENT DETAILS</a>
+                <a href="Fees_Payments.html">💳 FEES PAYMENTS</a>
+                <a href="Academic_Score.html">📊 ACADEMIC SCORE</a>
+                <a href="Academic_Curriclum.html">📘 ACADEMIC CURRICULUM</a>
+                <a href="Discussions_&_Query.html">💬 DISCUSSIONS & QUERY</a>
+            </div>
+
+            <div class="bottom-links">
+                <a href="Change_Password.html">🔑 Change Password</a>
+                <a href="Feedback.html">✍️ Feedback</a>
+                <a href="Complaint.html">📢 Complaint</a>
+                <a href="../Logout.html">📕 Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Navbar ================= -->
+    <div class="navbar-custom">
+        <div class="navbar-inner">
+            <!-- Hamburger -->
+            <div class="navbar-hamburger">
+                <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            </div>
+
+            <!-- Logo + Title -->
+            <div class="navbar-title">
+                <img src="../Pictures/coll logo.jpeg" class="w3-circle" alt="College Logo" width="60px">
+                <div class="navbar-title-text">
+                    <span class="college-name">Ewing Christian College</span>
+                    <span class="page-title">Update Information</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ================= Main Content ================= -->
+<div id="outer_box">
+  <div class="glass-box" id="ckinfo">
+    <h1 class="txtcenter">CHANGE INFORMATION</h1>
+
+    <!-- Info form with flex rows -->
+    <div class="student-details">
+      <!-- Labels -->
+      <span class="labels">
+        <div>Enrollment No.:</div>
+        <div>Name:</div>
+        <div>Father's Name:</div>
+        <div>Mother's Name:</div>
+        <div>DOB:</div>
+        <div>Permanent Address:</div>
+        <div>Current Address:</div>
+        <div>Mobile No.:</div>
+        <div>Email:</div>
+        <div>Aadhar:</div>
+        <div>Gender:</div>
+        <div>Category:</div>
+      </span>
+
+      <!-- Input fields -->
+      <span class="values">
+        <div><input type="checkbox" onclick="toggleField('sideid')">
+          <input type="text" placeholder="ECC20200079" id="sideid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('snameeid')">
+          <input type="text" placeholder="SONIYA YADAV" id="snameeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('sfnameeid')">
+          <input type="text" placeholder="MANOJ KUMAR YADAV" id="sfnameeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('smnameeid')">
+          <input type="text" placeholder="MENA YADAV" id="smnameeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('sdobeid')">
+          <input type="text" placeholder="11/11/2004" id="sdobeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('spaddeid')">
+          <textarea placeholder="409/233, GOMTI NAGAR, MOHABATGANG, PRAYAGRAJ" id="spaddeid" disabled></textarea>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('scaddeid')">
+          <textarea placeholder="409/233, GOMTI NAGAR, MOHABATGANG, PRAYAGRAJ" id="scaddeid" disabled></textarea>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('spnoeid')">
+          <input type="text" placeholder="1234567890" id="spnoeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('semaileid')">
+          <input type="text" placeholder="soniyayadav1111@gmail.com" id="semaileid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('sadhnoeid')">
+          <input type="text" placeholder="1234-5678-9012" id="sadhnoeid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('sgeneid')">
+          <input type="text" placeholder="Female" id="sgeneid" disabled>
+        </div>
+        <div><input type="checkbox" onclick="toggleField('scsteid')">
+          <input type="text" placeholder="GEN" id="scsteid" disabled>
+        </div>
+      </span>
+
+      <!-- Photo Upload & Preview -->
+      <span class="photo">
+        <img src="Profile_Pic.jpg" alt="stupic" id="spic"><br>
+        <label for="photoUpload" class="glass-btn">📷 Choose Photo</label>
+        <input type="file" id="photoUpload" accept="image/*" hidden>
+      </span>
+    </div>
+
+    <!-- Save button -->
+    <div class="txtcenter">
+      <button id="saveBtn" class="glass-btn">💾 Save Changes</button>
+    </div>
+  </div>
+</div>
+
+  <!-- ================= Modal (Custom Confirmation) ================= -->
+  <div id="confirmModal" class="modal-overlay hidden ">
+    <div class="modal glass-box">
+      <h2 class="txtcenter">Confirm Your Updates</h2>
+      <div id="modalSummary"></div>
+      <div class="modal-actions">
+        <button id="confirmSubmit" class="glass-btn">✅ Confirm Submit</button>
+        <button id="cancelSubmit" class="glass-btn">❌ Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Events Section (common) ================= -->
+    <div id="Events" class="event-wrapper">
+        <!-- 📚 Upcoming Classes -->
+        <div class="event-card">
+            <h2 class="event_head">📚 Upcoming Classes</h2>
+            <div class="dig">Cloud Computing - 10 AM</div>
+            <div class="dig">Data Structures - 12 PM</div>
+            <div class="dig">Operating Systems - 2 PM</div>
+        </div>
+
+        <!-- 📝 Pending Assignments -->
+        <div class="event-card">
+            <h2 class="event_head">📝 Pending Assignments</h2>
+            <div class="dig">DSA Assignment 2</div>
+            <div class="dig">DBMS Lab Work</div>
+            <div class="dig">AI Research Notes</div>
+        </div>
+
+        <!-- 🧪 Upcoming Exams -->
+        <div class="event-card">
+            <h2 class="event_head">🧪 Upcoming Exams</h2>
+            <div class="dig">OOPS Mid Term - 20 Jan</div>
+            <div class="dig">Networking Quiz - 25 Jan</div>
+            <div class="dig">AI Viva - 28 Jan</div>
+        </div>
+    </div>
+
+    <!-- Date & Time -->
+    <div id="datetime"></div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/w3.css">
+    <link rel="stylesheet" href="../CSS/Main.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="../CSS/Student_Details.css"> <!-- Page-specific -->
+
+    <!-- JS -->
+    <script src="../Js/Main.js"></script>
+
+    <title>Student Details</title>
+</head>
+
+<body>
+    <!-- ================= Sidebar ================= -->
+    <div class="w3-sidebar sidebar-custom w3-bar-block w3-collapse w3-card w3-animate-left" style="width:320px;left:0;"
+        id="mySidebar">
+
+        <!-- Mobile close -->
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
+        <!-- Year/Class -->
+        <div class="w3-container" style="text-align: center;">
+            <h1>BCA 2nd Year</h1>
+        </div>
+
+        <!-- Student Info -->
+        <div class="student-info">
+            <a href="Student_Details.html">
+                <img src="Profile_Pic.jpg" alt="Student Photo" class="student-photo">
+                <div class="w3-bar-item">Enrollment no.: ECC20200079</div>
+                <div class="w3-bar-item">Name: Soniya Yadav</div>
+                <div class="w3-bar-item">Email: soniyayadav1111@gmail.com</div>
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <div class="sidebar-nav">
+            <div class="main-links">
+                <a href="Home.html">🏠 Student Dashboard</a>
+                <a href="Student_Details.html" class="active-link">👨‍🎓 STUDENT DETAILS</a>
+                <a href="Fees_Payments.html">💳 FEES PAYMENTS</a>
+                <a href="Academic_Score.html">📊 ACADEMIC SCORE</a>
+                <a href="Academic_Curriclum.html">📘 ACADEMIC CURRICULUM</a>
+                <a href="Discussions_&_Query.html">💬 DISCUSSIONS & QUERY</a>
+            </div>
+
+            <div class="bottom-links">
+                <a href="Change_Password.html">🔑 Change Password</a>
+                <a href="Feedback.html">✍️ Feedback</a>
+                <a href="Complaint.html">📢 Complaint</a>
+                <a href="../Logout.html">📕 Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Navbar ================= -->
+    <div class="navbar-custom">
+        <div class="navbar-inner">
+            <!-- Hamburger -->
+            <div class="navbar-hamburger">
+                <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            </div>
+
+            <!-- Logo + Title -->
+            <div class="navbar-title">
+                <img src="../Pictures/coll logo.jpeg" class="w3-circle" alt="College Logo" width="60px">
+                <div class="navbar-title-text">
+                    <span class="college-name">Ewing Christian College</span>
+                    <span class="page-title">Student Details</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ================= Main Content ================= -->
+<div id="outer_box">
+
+  <!-- Student Details Card -->
+  <div class="glass-box" id="ckinfo">
+    <h1 class="txtcenter">STUDENT DETAILS</h1>
+
+    <div class="dispflex student-details">
+      <span class="labels">
+        <div>Enrollment No.:</div>
+        <div>Name:</div>
+        <div>Father's Name:</div>
+        <div>Mother's Name:</div>
+        <div>DOB:</div>
+        <div>Permanent Address:</div>
+        <div>Current Address:</div>
+        <div>Mobile No.:</div>
+        <div>Email:</div>
+        <div>Aadhar:</div>
+        <div>Gender:</div>
+        <div>Category:</div>
+      </span>
+
+      <span class="values">
+        <div>ECC20200079</div>
+        <div>SONIYA YADAV</div>
+        <div>MANOJ KUMAR YADAV</div>
+        <div>MENA YADAV</div>
+        <div>11/11/2004</div>
+        <div>409/233, GOMTI NAGAR, MOHABATGANG, PRAYAGRAJ</div>
+        <div>409/233, GOMTI NAGAR, MOHABATGANG, PRAYAGRAJ</div>
+        <div>1234567890</div>
+        <div>soniyayadav1111@gmail.com</div>
+        <div>1234-5678-9012</div>
+        <div>Female</div>
+        <div>GEN</div>
+      </span>
+
+      <!-- Student Photo -->
+      <span class="photo">
+        <img src="Profile_Pic.jpg" alt="" id="spic">
+      </span>
+    </div>
+
+    <a href="Update_Information.html" class="change-info">
+      <div class="txtcenter">
+        <img src="../Pictures/edit.png" alt="" height="25px"> Update Information
+      </div>
+    </a>
+  </div>
+
+  <!-- ID Card / Library Card -->
+  <div class="glass-box" id="ckinfo">
+    <a href="Course_Data/ID_Card.png">
+      <span id="ID-CARD">DOWNLOAD ID-CARD</span>
+    </a>
+    <a href="Course_Data/Library_Card.png">
+      <span id="LID-CARD">DOWNLOAD LIBRARY-CARD</span>
+    </a>
+  </div>
+</div>
+
+    <!-- ================= Events Section (common) ================= -->
+    <div id="Events" class="event-wrapper">
+        <!-- 📚 Upcoming Classes -->
+        <div class="event-card">
+            <h2 class="event_head">📚 Upcoming Classes</h2>
+            <div class="dig">Cloud Computing - 10 AM</div>
+            <div class="dig">Data Structures - 12 PM</div>
+            <div class="dig">Operating Systems - 2 PM</div>
+        </div>
+
+        <!-- 📝 Pending Assignments -->
+        <div class="event-card">
+            <h2 class="event_head">📝 Pending Assignments</h2>
+            <div class="dig">DSA Assignment 2</div>
+            <div class="dig">DBMS Lab Work</div>
+            <div class="dig">AI Research Notes</div>
+        </div>
+
+        <!-- 🧪 Upcoming Exams -->
+        <div class="event-card">
+            <h2 class="event_head">🧪 Upcoming Exams</h2>
+            <div class="dig">OOPS Mid Term - 20 Jan</div>
+            <div class="dig">Networking Quiz - 25 Jan</div>
+            <div class="dig">AI Viva - 28 Jan</div>
+        </div>
+    </div>
+
+    <!-- Date & Time -->
+    <div id="datetime"></div>
+
+    
+</body>
+
+</html>
